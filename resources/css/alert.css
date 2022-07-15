@@ -1,0 +1,35 @@
+/* alert --------------------------- */
+
+.alert{
+  @apply
+  px-3
+  py-2
+  rounded
+  text-sm
+  text-gray-700
+  bg-gray-200
+}
+
+.alert--info{
+  @apply
+  text-blue-900
+  bg-blue-100
+}
+
+.alert--success{
+  @apply
+  text-green-900
+  bg-green-100
+}
+
+.alert--warn{
+  @apply
+  text-orange-900
+  bg-orange-100
+}
+
+.alert--red{
+  @apply
+  text-red-900
+  bg-red-100
+}

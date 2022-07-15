@@ -1,0 +1,35 @@
+/* pages --------------------------- */
+
+.page {
+  @apply
+  min-h-screen
+  w-full
+  p-4
+  rounded
+  shadow-md
+  bg-gray-200
+}
+
+.page--center {
+  @apply
+  flex
+  flex-col
+  gap-4
+  justify-center
+  items-center
+}
+
+/* card --------------------------- */
+
+.block {
+  @apply
+  p-6
+  rounded
+  shadow-lg
+  w-full
+  max-w-[700px]
+  flex
+  flex-col
+  gap-4
+  bg-white
+}
