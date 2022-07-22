@@ -1,7 +1,7 @@
  <div class="flex min-h-screen w-full lg:flex-col">
 
    <div
-     class="{{ $image ?? '' }} w-full bg-gray-800 bg-cover bg-center lg:h-[120px]"
+     class="{{ $image ?? '' }} w-full bg-gray-200 bg-cover bg-center lg:h-[120px]"
    >
    </div>
 
