@@ -50,6 +50,42 @@ aliased
 mailhog
 ```
 
+### Digital Ocean app platform
+
+**Build commands**
+```
+composer install --optimize-autoloader --no-dev\
+&& npm run build
+```
+
+**Run commands**
+
+```
+php artisan migrate --force\
+&& php artisan config:cache\
+&& php artisan route:cache\
+&& php artisan view:cache\
+&& heroku-php-apache2 public/
+```
+
+**ENV vars**
+
+> **database** = digital ocean database name
+
+```
+APP_NAME=Laravel base
+APP_KEY=[generate new laravel app key]
+DB_CONNECTION=pgsql
+DB_HOST=${database.HOST}
+DB_PORT=${database.PORT
+DB_DATABASE=${database.DATABASE}
+DB_USERNAME=${database.USERNAME}
+DB_PASSWORD=${database.PASSWORD}
+DATABASE_URL=${database.DATABASE_URL}
+APP_URL=${APP_URL}
+APP_ENV=production
+```
+
 ---
 
 Carlos Costa @ 2022
