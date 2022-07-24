@@ -33,3 +33,24 @@ sudo apt install php8.1-{bcmath,xml,fpm,mysql,zip,intl,ldap,gd,cli,bz2,curl,mbst
 https://computingforgeeks.com/how-to-install-php-on-ubuntu-linux-system/
 
 https://www.cloudbooklet.com/how-to-install-or-upgrade-php-8-1-on-ubuntu-20-04/
+
+
+# Install NGINX
+
+```
+sudo apt update
+sudo apt install nginx
+```
+
+### Allow firewall
+
+```
+sudo ufw app list
+sudo ufw allow 'Nginx HTTP'
+sudo ufw status
+```
+### Check NGINX status
+
+```
+systemctl status nginx
+```
